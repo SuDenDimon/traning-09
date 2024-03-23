@@ -20,20 +20,20 @@
 // Якщо значення парне, вирішуй проміс та повертай "even" через 1 секунду.
 // Якщо значення не парне, вирішуй проміс та повертай "odd" через 2 секунди.
 
-const value = prompt("Enter number");
-function checkValue(value) {
-  return new Promise((resolve, reject) => {
-    const numberValue = Number(value);
-    if (Number.isNaN(numberValue)) {
-      reject("error");
-    };
-    if (numberValue % 2 === 0) {
-      setTimeout(() => resolve("even"), 1000);
-    };
-    if (numberValue % 2 !== 0) {
-      setTimeout(() => resolve("odd"), 2000);
-    };
-  });
-}
+// const value = prompt("Enter number");
+// function checkValue(value) {
+//   return new Promise((resolve, reject) => {
+//     const numberValue = Number(value);
+//     if (Number.isNaN(numberValue)) {
+//       reject("error");
+//     };
+//     if (numberValue % 2 === 0) {
+//       setTimeout(() => resolve("even"), 1000);
+//     };
+//     if (numberValue % 2 !== 0) {
+//       setTimeout(() => resolve("odd"), 2000);
+//     };
+//   });
+// }
 
-checkValue(value).then(res => console.log(res)).catch(err => console.log(err));
+// checkValue(value).then(res => console.log(res)).catch(err => console.log(err));
